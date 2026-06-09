@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MyPort — Vinayak Chaturvedi Portfolio
 
-## Getting Started
+A modern personal portfolio built with **Next.js**, **Tailwind CSS**, and **TypeScript**, inspired by [itsprem.me](https://itsprem.me/).
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Dark / light theme toggle (floating button on the right)
+- Profile photo and downloadable resume
+- Sections: Home, About, Projects, Experience, GitHub, Connect
+- Responsive design for mobile and desktop
+- Smooth animations with Framer Motion
+
+## Folder Location
+
+```
+C:\Users\Lenovo\Desktop\MyPort
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Run Locally
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+cd C:\Users\Lenovo\Desktop\MyPort
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [http://localhost:3000](http://localhost:3000)
 
-## Learn More
+## Build for Production
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy (Vercel — Recommended)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Push this repo to GitHub: `https://github.com/vina-yak11/myport`
+2. Go to [vercel.com](https://vercel.com) and sign in with GitHub
+3. Click **Add New Project** → import `myport`
+4. Keep default settings (Framework: Next.js)
+5. Click **Deploy**
+6. Your live URL will look like: `https://myport.vercel.app`
 
-## Deploy on Vercel
+## Update Content Later
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Project links:** edit `src/data/portfolio.ts` → `projects[].links`
+- **Resume:** replace `public/resume/Vinayak_Resume.pdf`
+- **Avatar:** replace `public/avatar.png`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contact
+
+- Email: vinayakchaturvedi545@gmail.com
+- GitHub: https://github.com/vina-yak11
