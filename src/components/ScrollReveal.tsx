@@ -39,7 +39,6 @@ export function ScrollReveal({
 
         if (entry.isIntersecting) {
           wasVisible.current = true;
-          const offset = offsets[direction];
           controls.start({
             opacity: 1,
             x: 0,

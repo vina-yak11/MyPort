@@ -40,6 +40,9 @@ export function ColorThemeProvider({ children }: { children: React.ReactNode }) 
   const [colorTheme, setColorThemeState] = useState<ColorThemeId>("violet");
   const [mounted, setMounted] = useState(false);
 
+  // Reads the persisted accent from localStorage on mount; the setState calls
+  // here are an intentional, one-time hydration step (browser-only API).
+  /* eslint-disable react-hooks/set-state-in-effect */
   useEffect(() => {
     const saved = localStorage.getItem("portfolio-color-theme") as ColorThemeId | null;
     if (saved && colorThemes.some((t) => t.id === saved)) {
@@ -47,6 +50,7 @@ export function ColorThemeProvider({ children }: { children: React.ReactNode }) 
     }
     setMounted(true);
   }, []);
+  /* eslint-enable react-hooks/set-state-in-effect */
 
   const setColorTheme = useCallback((id: ColorThemeId) => {
     setColorThemeState(id);

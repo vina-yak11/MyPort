@@ -1,16 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 export function CustomCursor() {
-  const [enabled, setEnabled] = useState(false);
-
   useEffect(() => {
     const canUse =
       window.matchMedia("(pointer: fine)").matches && window.innerWidth > 768;
     if (!canUse) return;
 
-    setEnabled(true);
     document.body.classList.add("has-custom-cursor");
 
     const cursor = document.createElement("div");
@@ -63,6 +60,5 @@ export function CustomCursor() {
     };
   }, []);
 
-  if (!enabled) return null;
   return null;
 }
