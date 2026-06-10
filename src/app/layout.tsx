@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { CustomCursor } from "@/components/CustomCursor";
+import { PageLoader } from "@/components/PageLoader";
 import { ThemeProvider } from "@/components/ThemeProvider";
-import { ThemeToggle } from "@/components/ThemeToggle";
 import "./globals.css";
 
 const inter = Inter({
@@ -38,8 +39,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} min-h-screen antialiased`}>
         <ThemeProvider>
+          <PageLoader />
+          <CustomCursor />
           {children}
-          <ThemeToggle />
         </ThemeProvider>
       </body>
     </html>

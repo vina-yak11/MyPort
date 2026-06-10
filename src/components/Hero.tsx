@@ -3,14 +3,17 @@
 import { motion } from "framer-motion";
 import { Download, Mail } from "lucide-react";
 import { GitHubIcon, LinkedInIcon } from "@/components/Icons";
+import { ScrollDownArrow } from "@/components/ScrollDownArrow";
 import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/data/portfolio";
 
 export function Hero() {
+  const nameParts = siteConfig.name.split(" ");
+
   return (
-    <section id="home" className="section-shell min-h-screen pt-28">
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:items-center lg:gap-16">
+    <section id="home" className="hero-section">
+      <div className="mx-auto grid w-full max-w-6xl flex-1 gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:items-center lg:gap-16">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
@@ -37,8 +40,18 @@ export function Hero() {
           className="space-y-6"
         >
           <p className="text-sm text-muted">👋 Hey there, I&apos;m</p>
-          <h1 className="text-gradient text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-            {siteConfig.name}
+          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+            {nameParts.map((part, i) => (
+              <motion.span
+                key={part}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 + i * 0.12, duration: 0.6 }}
+                className="text-gradient mr-2 inline-block"
+              >
+                {part}
+              </motion.span>
+            ))}
           </h1>
           <p className="text-sm text-muted">
             B.Tech CSE · {siteConfig.location}
@@ -89,6 +102,8 @@ export function Hero() {
           </div>
         </motion.div>
       </div>
+
+      <ScrollDownArrow target="#about" />
     </section>
   );
 }

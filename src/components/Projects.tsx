@@ -1,38 +1,27 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { GitHubIcon } from "@/components/Icons";
+import { ScrollReveal } from "@/components/ScrollReveal";
 import { projects } from "@/data/portfolio";
 
 export function Projects() {
   return (
     <section id="projects" className="section-shell">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mb-12"
-        >
+        <ScrollReveal className="mb-12">
           <p className="section-label">Projects</p>
           <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Selected work</h2>
           <p className="mt-4 max-w-2xl text-muted">
             Project links will be added soon. Each build focuses on practical
             workflows, clean UI, and dependable backend logic.
           </p>
-        </motion.div>
+        </ScrollReveal>
 
         <div className="space-y-8">
           {projects.map((project, index) => (
-            <motion.article
-              key={project.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.5, delay: index * 0.08 }}
-              className="project-card"
-            >
+            <ScrollReveal key={project.id} delay={index * 0.08}>
+            <article className="project-card">
               <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
                 <div className="max-w-2xl space-y-4">
                   <p className="text-xs tracking-widest text-muted">
@@ -74,7 +63,8 @@ export function Projects() {
                   </div>
                 </div>
               </div>
-            </motion.article>
+            </article>
+            </ScrollReveal>
           ))}
         </div>
       </div>

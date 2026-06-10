@@ -1,7 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { GitHubIcon } from "@/components/Icons";
+import { ScrollReveal } from "@/components/ScrollReveal";
 import Image from "next/image";
 import { siteConfig } from "@/data/portfolio";
 
@@ -9,11 +9,7 @@ export function GitHubSection() {
   return (
     <section id="github" className="section-shell border-y border-white/5">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:items-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-        >
+        <ScrollReveal>
           <p className="section-label">GitHub</p>
           <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
             Building cool things with code
@@ -31,14 +27,10 @@ export function GitHubSection() {
             <GitHubIcon className="h-4 w-4" />
             View Profile
           </a>
-        </motion.div>
+        </ScrollReveal>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.96 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          className="glass-card flex items-center gap-5"
-        >
+        <ScrollReveal delay={0.1}>
+        <div className="glass-card flex items-center gap-5">
           <Image
             src="https://github.com/vina-yak11.png"
             alt="GitHub avatar"
@@ -53,7 +45,8 @@ export function GitHubSection() {
               3 projects · 3 internships · B.Tech CSE {siteConfig.graduationYear}
             </p>
           </div>
-        </motion.div>
+        </div>
+        </ScrollReveal>
       </div>
     </section>
   );
