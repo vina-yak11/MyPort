@@ -3,8 +3,8 @@ export const siteConfig = {
   initials: "VC",
   role: "Software Developer",
   tagline: "Building the web, one line at a time.",
-  subtitle: "Computer Science Engineering Student",
-  location: "Jhalawar, Rajasthan, India",
+  subtitle: "Creative Developer",
+  location: "Jaipur, Rajasthan, India",
   graduationYear: "2026",
   email: "vinayakchaturvedi545@gmail.com",
   phone: "+91 88240 65595",
@@ -26,9 +26,9 @@ export const navLinks = [
 
 export const stats = [
   { value: "3", label: "Projects" },
-  { value: "3", label: "Internships" },
+  { value: "6", label: "Internships" },
   { value: "4", label: "Certifications" },
-  { value: "7.64", label: "CGPA" },
+  { value: "∞", label: "Expectations" },
 ];
 
 export const skills = [
@@ -57,7 +57,7 @@ export const projects = [
     tags: ["ASP.NET MVC", "Authentication", "Excel Data"],
     tech: ["ASP.NET MVC", "C#", "SQL", "HTML/CSS"],
     year: "2025",
-    links: { live: null, github: null },
+    //links: { live: null, github: null },
   },
   {
     id: "02",
@@ -67,7 +67,7 @@ export const projects = [
     tags: ["Web Application", "Database", "Ordering"],
     tech: ["HTML", "CSS", "JavaScript", "SQL"],
     year: "2024",
-    links: { live: null, github: null },
+    //links: { live: null, github: null },
   },
   {
     id: "03",
@@ -77,40 +77,68 @@ export const projects = [
     tags: ["Java", "Booking Flow", "Transport"],
     tech: ["Java", "OOP", "System Design"],
     year: "2024",
-    links: { live: null, github: null },
+    //links: { live: null, github: null },
   },
 ];
 
 export const experience = [
+  // ====== Experience entries (editable) ======
+  // You can add or update items below. Keep the same object shape: { duration, role, company, points }
   {
-    duration: "90 Days",
-    role: "Training Intern",
-    company: "GAIL (India) Limited, Jaipur",
+    duration: "May 2026 - Present",
+    role: "Full Stack Engineer",
+    company: "Dream Mantra",
     points: [
-      "Developed a web application to manage Excel data stored on a server.",
-      "Implemented secure login and registration authentication.",
-      "Built date-based filtering for faster data retrieval.",
-      "Improved the interface with responsive design and usability updates.",
+      "Working on end-to-end web applications and feature delivery.",
+      "Collaborating with product and design to ship reliable user experiences.",
     ],
   },
   {
-    duration: "90 Days",
-    role: "Training Intern",
-    company: "Rajasthan Electronics and Instruments Limited, Jaipur",
+    duration: "Jul 2022 - Mar 2026",
+    role: "Online Tutoring",
+    company: "Surman Sansthan — Jaipur, Rajasthan, India · Remote",
     points: [
-      "Worked on real-world project development in a corporate environment.",
-      "Built a web application while learning the full development lifecycle.",
+      "Tutored children on computer systems and computer science fundamentals.",
+      "Prepared lesson plans and hands-on exercises to strengthen core concepts.",
     ],
   },
   {
-    duration: "45 Days",
-    role: "Training Intern",
-    company: "Kalisindh Thermal Power Project, Jhalawar",
+    duration: "Dec 2025 - Jan 2026",
+    role: "Quality Analyst",
+    company: "Lohiya Group",
+    points: [
+      "Performed QA for industrial trading and supply workflows.",
+      "Validated data and processes for abrasives, grinding wheels, and consumables.",
+    ],
+  },
+  {
+    duration: "May 2025 - Aug 2025",
+    role: "Web Developer",
+    company: "GAIL (India) Limited",
+    points: [
+      "Built web interfaces and integrated backend endpoints for internal tools.",
+      "Worked with stakeholders to translate requirements into features.",
+    ],
+  },
+  {
+    duration: "Jul 2024 - Sep 2024",
+    role: "Web Developer",
+    company: "Rajasthan Electronics & Instruments Limited",
+    points: [
+      "Contributed to corporate web projects and deployment processes.",
+      "Implemented responsive layouts and accessibility improvements.",
+    ],
+  },
+  {
+    duration: "Jul 2023 - Aug 2023",
+    role: "Industrial Trainee",
+    company: "Rajasthan Rajya Vidyut Utpadan Nigam Limited — Kalisindh Thermal Power Project",
     points: [
       "Studied thermal power generation systems and industrial operations.",
-      "Observed cybersecurity practices including firewalls and layered security.",
+      "Observed on-site engineering workflows and safety procedures.",
     ],
   },
+  // ====== End editable experience ======
 ];
 
 export const education = [
@@ -118,19 +146,16 @@ export const education = [
     period: "2022 – 2026",
     title: "B.Tech in Computer Science Engineering",
     place: "Government Engineering College, Jhalawar",
-    detail: "CGPA: 7.64",
   },
   {
-    period: "2022",
+    period: "2021 - 2022",
     title: "Class 12 (CBSE)",
     place: "Kendriya Vidyalaya",
-    detail: "69%",
   },
   {
-    period: "2020",
+    period: "2019 - 2020",
     title: "Class 10 (CBSE)",
     place: "Kendriya Vidyalaya",
-    detail: "69%",
   },
 ];
 

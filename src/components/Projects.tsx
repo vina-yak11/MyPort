@@ -1,7 +1,5 @@
 "use client";
 
-import { ExternalLink } from "lucide-react";
-import { GitHubIcon } from "@/components/Icons";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { projects } from "@/data/portfolio";
 
@@ -35,31 +33,6 @@ export function Projects() {
                         {tech}
                       </span>
                     ))}
-                  </div>
-                  <div className="flex flex-wrap gap-3 pt-2">
-                    <span className="btn-disabled inline-flex items-center gap-2">
-                      <ExternalLink className="h-4 w-4" />
-                      Live Demo — Coming Soon
-                    </span>
-                    <span className="btn-disabled inline-flex items-center gap-2">
-                      <GitHubIcon className="h-4 w-4" />
-                      GitHub — Add Later
-                    </span>
-                  </div>
-                </div>
-
-                <div className="project-preview">
-                  <div className="project-preview-inner">
-                    <p className="text-xs text-violet-300">Featured Project</p>
-                    <p className="mt-2 text-2xl font-bold">{project.title}</p>
-                    <p className="mt-2 text-sm text-white/70">{project.year}</p>
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      {project.tags.map((tag) => (
-                        <span key={tag} className="rounded-full bg-white/10 px-2 py-1 text-xs">
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
                   </div>
                 </div>
               </div>

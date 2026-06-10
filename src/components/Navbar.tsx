@@ -42,8 +42,8 @@ export function Navbar() {
           <div className="tony-stark-wrap" title="I am Iron Man">
             <div className="tony-stark-glow" aria-hidden="true" />
             <Image
-              src="/tony-stark.gif"
-              alt="Tony Stark"
+              src={siteConfig.avatarPath}
+              alt={`${siteConfig.name} profile image`}
               width={32}
               height={32}
               className="tony-stark-img"

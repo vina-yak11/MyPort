@@ -15,32 +15,13 @@ export function Hero() {
     <section id="home" className="hero-section">
       <div className="mx-auto grid w-full max-w-6xl flex-1 gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:items-center lg:gap-16">
         <motion.div
-          initial={{ opacity: 0, x: -30 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.7 }}
-          className="relative mx-auto w-full max-w-md lg:max-w-none"
-        >
-          <div className="hero-glow" aria-hidden="true" />
-          <div className="relative overflow-hidden rounded-3xl border border-violet-500/20 bg-gradient-to-b from-violet-500/10 to-transparent p-2">
-            <Image
-              src={siteConfig.avatarPath}
-              alt={`${siteConfig.name} profile photo`}
-              width={520}
-              height={680}
-              priority
-              className="h-auto w-full rounded-2xl object-cover object-top"
-            />
-          </div>
-        </motion.div>
-
-        <motion.div
           initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, delay: 0.15 }}
           className="space-y-6"
         >
           <p className="text-sm text-muted">👋 Hey there, I&apos;m</p>
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+          <h1 className="text-5xl font-extrabold tracking-tight sm:text-6xl lg:text-7xl">
             {nameParts.map((part, i) => (
               <motion.span
                 key={part}
@@ -53,10 +34,8 @@ export function Hero() {
               </motion.span>
             ))}
           </h1>
-          <p className="text-sm text-muted">
-            B.Tech CSE · {siteConfig.location}
-          </p>
-          <p className="text-lg font-medium text-accent">{siteConfig.subtitle}</p>
+          <p className="text-sm text-muted">{siteConfig.location}</p>
+          <p className="text-xl font-semibold text-accent">{siteConfig.subtitle}</p>
           <p className="max-w-xl text-lg text-foreground/90">{siteConfig.tagline}</p>
           <p className="max-w-xl text-muted">
             I don&apos;t just write code — I craft reliable systems that turn ideas

@@ -9,6 +9,25 @@ import { Toast } from "@/components/Toast";
 import { useState } from "react";
 import { siteConfig } from "@/data/portfolio";
 
+function InstagramLogo({ className }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+      <path d="M16 11.37a4 4 0 1 1-8 0 4 4 0 0 1 8 0z" />
+      <path d="M17.5 6.5h.01" />
+    </svg>
+  );
+}
+
 const connectFeatures = [
   { icon: Zap, text: "Quick response time" },
   { icon: Users, text: "Open to collaborations" },
@@ -23,6 +42,14 @@ const socialLinks = [
     glowColor: "#0A66C2",
     bg: "linear-gradient(135deg, #0077B5, #0A66C2)",
     icon: LinkedInIcon,
+  },
+  {
+    name: "Instagram",
+    handle: "@vinychat364",
+    url: "https://www.instagram.com/vinychat364?igsh=MTAzbTY1dzF2MWo4Ng==",
+    glowColor: "#E1306C",
+    bg: "linear-gradient(135deg, #FD1D1D, #F56040)",
+    icon: InstagramLogo,
   },
   {
     name: "Email",
@@ -174,7 +201,7 @@ export function Contact() {
             Let&apos;s connect, collaborate, or just say hi
           </p>
 
-          <div className="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-5">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-5 md:gap-5">
             {socialLinks.map((social, index) => (
               <SocialCard key={social.name} {...social} index={index} />
             ))}

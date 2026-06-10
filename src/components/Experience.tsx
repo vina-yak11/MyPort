@@ -19,7 +19,7 @@ export function Experience() {
             <ScrollReveal key={item.company} delay={index * 0.08} direction="left">
             <article className="glass-card flex flex-col gap-4 sm:flex-row sm:gap-8">
               <div className="sm:w-28">
-                <p className="text-sm font-medium text-accent">{item.duration}</p>
+                <p className="text-sm font-medium text-accent whitespace-nowrap">{item.duration}</p>
               </div>
               <div className="flex-1">
                 <h3 className="text-xl font-semibold">{item.role}</h3>
