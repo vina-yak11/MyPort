@@ -13,6 +13,8 @@ export function NavbarThemeMenu() {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
+  // Mount flag avoids SSR/client hydration mismatch for theme-dependent UI.
+  // eslint-disable-next-line react-hooks/set-state-in-effect
   useEffect(() => setMounted(true), []);
 
   useEffect(() => {
