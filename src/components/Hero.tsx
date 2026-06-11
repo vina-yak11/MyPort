@@ -90,8 +90,8 @@ export function Hero() {
           <Image
             src={siteConfig.heroAvatarPath}
             alt="Developer avatar"
-            width={400}
-            height={500}
+            width={360}
+            height={480}
             className="object-contain"
             priority
           />
