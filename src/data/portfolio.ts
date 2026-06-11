@@ -81,7 +81,21 @@ export const projects = [
   },
 ];
 
-export const experience = [
+export type ExperienceItem = {
+  duration: string;
+  role: string;
+  company: string;
+  points: string[];
+};
+
+export type EducationItem = {
+  period: string;
+  title: string;
+  place: string;
+  detail?: string;
+};
+
+export const experience: ExperienceItem[] = [
   // ====== Experience entries (editable) ======
   // You can add or update items below. Keep the same object shape: { duration, role, company, points }
   {
@@ -141,7 +155,7 @@ export const experience = [
   // ====== End editable experience ======
 ];
 
-export const education = [
+export const education: EducationItem[] = [
   {
     period: "2022 – 2026",
     title: "B.Tech in Computer Science Engineering",

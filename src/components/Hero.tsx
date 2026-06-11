@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { Download, Mail } from "lucide-react";
 import { GitHubIcon, LinkedInIcon } from "@/components/Icons";
 import { ScrollDownArrow } from "@/components/ScrollDownArrow";
-import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/data/portfolio";
 
