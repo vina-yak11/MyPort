@@ -12,7 +12,7 @@ export const siteConfig = {
   linkedin: "https://www.linkedin.com/in/vinayak-chaturvedii/",
   resumePath: "/resume/Vinayak_Resume.pdf",
   avatarPath: "/avatar.png",
-  maleAvatarPath: "/male-avatar.svg",
+  maleAvatarPath: "/avatar.png",
 };
 
 export const navLinks = [
