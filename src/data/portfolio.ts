@@ -11,7 +11,7 @@ export const siteConfig = {
   github: "https://github.com/vina-yak11",
   linkedin: "https://www.linkedin.com/in/vinayak-chaturvedii/",
   resumePath: "/resume/Vinayak_Resume.pdf",
-  avatarPath: "/avatar.png",
+  avatarPath: "/me.jpeg",
   maleAvatarPath: "/avatar.png",
   heroAvatarPath: "/hero-avatar.png",
 };
