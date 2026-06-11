@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Download, Mail } from "lucide-react";
+import Image from "next/image";
 import { GitHubIcon, LinkedInIcon } from "@/components/Icons";
 import { ScrollDownArrow } from "@/components/ScrollDownArrow";
 import Link from "next/link";
@@ -79,9 +80,26 @@ export function Hero() {
             </a>
           </div>
         </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7, delay: 0.3 }}
+          className="flex justify-center items-center"
+        >
+          <Image
+            src={siteConfig.heroAvatarPath}
+            alt="Developer avatar"
+            width={400}
+            height={500}
+            className="object-contain"
+            priority
+          />
+        </motion.div>
       </div>
 
       <ScrollDownArrow target="#about" />
     </section>
   );
 }
+
