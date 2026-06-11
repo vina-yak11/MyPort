@@ -119,7 +119,7 @@ export function About() {
 
           <ScrollReveal delay={0.15}>
             <article className="glass-card">
-              <p className="card-kicker card-kicker-pink">अनुगच्छतु प्रवाहं</p>
+              <p className="card-kicker card-kicker-violet">अनुगच्छतु प्रवाहं</p>
               <p className="mt-4 text-lg leading-relaxed text-foreground/90">
                 "Go with the flow."
               </p>
