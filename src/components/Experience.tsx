@@ -46,7 +46,9 @@ export function Experience() {
                 <p className="text-sm text-accent">{item.period}</p>
                 <h3 className="mt-2 text-lg font-semibold">{item.title}</h3>
                 <p className="mt-1 text-sm text-muted">{item.place}</p>
-                <p className="mt-3 font-medium">{item.detail}</p>
+                {(item as any).detail ? (
+                  <p className="mt-3 font-medium">{(item as any).detail}</p>
+                ) : null}
               </article>
             ))}
           </div>
