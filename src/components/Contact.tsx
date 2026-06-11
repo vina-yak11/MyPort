@@ -149,6 +149,16 @@ export function Contact() {
           <ScrollReveal delay={0.1}>
             <form onSubmit={handleSubmit} className="connect-form glass-card">
               <label className="block space-y-2">
+                <span className="text-sm text-muted">Your Name</span>
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  placeholder="Jane Doe"
+                  className="input-field"
+                />
+              </label>
+              <label className="block space-y-2">
                 <span className="text-sm text-muted">Your Email</span>
                 <input
                   type="email"

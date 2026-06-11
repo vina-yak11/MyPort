@@ -28,6 +28,11 @@ export const metadata: Metadata = {
       "Building practical web applications with clean UI and dependable backend logic.",
     type: "website",
   },
+  icons: {
+    icon: [{ url: '/Favicon-new.png', type: 'image/png' }],
+    shortcut: '/Favicon-new.png',
+    apple: '/Favicon-new.png',
+  },
 };
 
 export default function RootLayout({

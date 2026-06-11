@@ -55,8 +55,8 @@ export function About() {
 
         <ScrollReveal delay={0.1} className="mx-auto mt-10 max-w-3xl text-center text-lg text-muted">
           <p>
-            I&apos;m a Computer Science Engineering student at Government Engineering
-            College, Jhalawar, focused on web applications, authentication flows,
+            I&apos;m a Computer Science And Engineering Graduate from Government Engineering
+            College, focused on web applications, authentication flows,
             and database-backed systems. Currently leveling up in data science,
             machine learning, and full-stack development.
           </p>
@@ -78,6 +78,54 @@ export function About() {
               <p className="mt-4 text-lg leading-relaxed text-foreground/90">
                 I build with purpose — every animation is intentional, every
                 interaction considered, every project a chance to push boundaries.
+              </p>
+            </article>
+          </ScrollReveal>
+        </div>
+
+        <ScrollReveal className="mt-10 text-center">
+          <p className="section-label">Most Influential Quotes</p>
+          <h3 className="mt-3 text-2xl font-semibold sm:text-3xl">
+            Lessons that guide how I work and live
+          </h3>
+        </ScrollReveal>
+
+        <div className="mt-8 grid gap-6 lg:grid-cols-3">
+          <ScrollReveal delay={0.05}>
+            <article className="glass-card">
+              <p className="card-kicker card-kicker-violet">कर्मण्येवाधिकारस्ते मा फलेषु कदाचन। </p>
+              <p className="mt-4 text-lg leading-relaxed text-foreground/90">
+                "You have a right to perform your prescribed duty, but you are not
+                entitled to the fruits of action."
+              </p>
+              <p className="mt-3 text-sm text-muted">
+                Focus on the present effort rather than worrying about the outcome.
+              </p>
+            </article>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.1}>
+            <article className="glass-card">
+              <p className="card-kicker card-kicker-teal">वसुधैव कुटुम्बकम्</p>
+              <p className="mt-4 text-lg leading-relaxed text-foreground/90">
+                "The whole world is one single family."
+              </p>
+              <p className="mt-3 text-sm text-muted">
+                A powerful message of universal brotherhood, peace, and global
+                connection.
+              </p>
+            </article>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.15}>
+            <article className="glass-card">
+              <p className="card-kicker card-kicker-pink">अनुगच्छतु प्रवाहं</p>
+              <p className="mt-4 text-lg leading-relaxed text-foreground/90">
+                "Go with the flow."
+              </p>
+              <p className="mt-3 text-sm text-muted">
+                Encourages adaptability and acceptance of life's changes and
+                challenges.
               </p>
             </article>
           </ScrollReveal>
@@ -121,7 +169,7 @@ export function About() {
         </div>
 
         <p className="mt-16 text-center text-sm text-muted">
-          Graduated {siteConfig.graduationYear}
+          highly energetic and passionate about technology and innovation.
         </p>
       </div>
     </section>
