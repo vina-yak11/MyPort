@@ -13,6 +13,7 @@ export const siteConfig = {
   resumePath: "/resume/Vinayak_Resume.pdf",
   avatarPath: "/avatar.png",
   maleAvatarPath: "/avatar.png",
+  heroAvatarPath: "/hero-avatar.png",
 };
 
 export const navLinks = [

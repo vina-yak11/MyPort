@@ -21,10 +21,10 @@ export function About() {
             className="about-avatar-ring"
           >
             <Image
-              src={siteConfig.maleAvatarPath}
-              alt="Male developer avatar"
-              width={120}
-              height={120}
+              src={siteConfig.heroAvatarPath || siteConfig.maleAvatarPath}
+              alt="Developer avatar"
+              width={160}
+              height={160}
               className="about-avatar-img"
             />
           </motion.div>
